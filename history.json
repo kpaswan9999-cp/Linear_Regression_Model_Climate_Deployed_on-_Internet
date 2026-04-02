@@ -1,0 +1,17 @@
+[
+    {
+        "id": "ac327816-5105-4237-aed7-613db846a617",
+        "timestamp": "2026-04-02 23:36:48",
+        "inputs": {
+            "Temperature_Max (\u00b0C)": 38.5,
+            "Temperature_Min (\u00b0C)": 26.2,
+            "Humidity (%)": 35.0,
+            "Rainfall (mm)": 0.0,
+            "Wind_Speed (km/h)": 12.0,
+            "AQI": 110.0,
+            "Pressure (hPa)": 1008.0,
+            "Cloud_Cover (%)": 10.0
+        },
+        "prediction": 32.35
+    }
+]

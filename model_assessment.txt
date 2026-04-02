@@ -1,0 +1,3 @@
+Train R2: 0.9999649043714132
+Test R2: 0.9999641094434959
+Assessment: Model looks stable.
