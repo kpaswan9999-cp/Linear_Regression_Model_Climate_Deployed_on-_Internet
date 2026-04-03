@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtmosAI — Prediction History</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div id="page-loader">
+        <div class="loader-ring"></div>
+        <p class="loader-text">AtmosAI</p>
+    </div>
+
+    <!-- Background -->
+    <div class="atmos-bg"></div>
+    <div class="cloud-layer">
+        <div class="cloud-blob cb-1"></div>
+        <div class="cloud-blob cb-2"></div>
+        <div class="cloud-blob cb-3"></div>
+    </div>
+    <div class="grain"></div>
+
+    <!-- Floating Clouds -->
+    <div class="cloud-scene">
+        <div class="cloud cloud-b cl-1"></div>
+        <div class="cloud cloud-a cl-2"></div>
+        <div class="cloud cloud-c cl-3"></div>
+        <div class="cloud cloud-b cl-4"></div>
+        <div class="cloud cloud-a cl-5"></div>
+        <div class="cloud cloud-c cl-6"></div>
+        <div class="cloud cloud-b cl-7"></div>
+        <div class="cloud cloud-a cl-8"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <div class="logo-icon">🌦</div>
+            <span class="logo-text">Atmos<span>AI</span></span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">
+                <span class="nav-icon">⚡</span> Predict
+            </a>
+            <a href="about.html" class="nav-link">
+                <span class="nav-icon">📡</span> About
+            </a>
+            <a href="history.html" class="nav-link active">
+                <span class="nav-icon">🕒</span> History
+            </a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="page-wrapper">
+        <div class="glow-border-wrap">
+            <div class="glass-card">
+
+                <!-- Header -->
+                <div class="history-header">
+                    <div>
+                        <h1>Prediction History</h1>
+                        <p>
+                            Loading history...
+                        </p>
+                    </div>
+                    <a href="index.html" class="btn-outline">+ New Prediction</a>
+                </div>
+
+                <!-- History List -->
+                <div class="history-list">
+                    <!-- Populated by JavaScript -->
+                </div>
+
+                <!-- Empty State -->
+                <div class="empty-state" style="display:none;">
+                    <span class="empty-icon">🌤</span>
+                    <h3>No predictions yet</h3>
+                    <p>Your prediction history will appear here once you run your first analysis.</p>
+                    <a href="index.html" class="btn-primary" style="display:inline-block; width:auto; padding:13px 28px; margin-top:22px; border-radius:10px; font-size:0.85rem; text-decoration:none;">
+                        Make First Prediction →
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 AtmosAI &nbsp;·&nbsp; Advanced Climate Intelligence Platform
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
