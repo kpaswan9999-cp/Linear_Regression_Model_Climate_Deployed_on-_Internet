@@ -1,10 +1,22 @@
-// AtmosAI — Decoupled Premium Script (Vercel + Render)
+let API_BASE_URL = '';
 
-// CONFIGURATION: Replace with your Render Backend URL after deployment
-// Example: const API_BASE_URL = 'https://your-app-name.onrender.com';
-const API_BASE_URL = 'https://linear-regression-model-climate-deployed.onrender.com';
+document.addEventListener('DOMContentLoaded', async () => {
 
-document.addEventListener('DOMContentLoaded', () => {
+    /* =============================================
+       INITIALIZE CONFIG (from Vercel Env Vars)
+    ============================================= */
+    try {
+        const configRes = await fetch('/api/config');
+        const configData = await configRes.json();
+        API_BASE_URL = configData.RENDER_API_URL;
+        console.log('Backend connected at:', API_BASE_URL);
+    } catch (err) {
+        console.error('Failed to load API configuration:', err);
+        // Fallback for local development if API fails
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            API_BASE_URL = 'http://127.0.0.1:5000';
+        }
+    }
 
     /* =============================================
        PAGE LOADER
